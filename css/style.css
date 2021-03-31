@@ -96,16 +96,20 @@ header {
     background-color: #fff;
 }
 
+.card-container {}
+
 .cards {
     display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .card {
     width: 400px;
-    margin-left: .5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 20px;
 }
 
 .card-top {
@@ -119,4 +123,68 @@ header {
 
 .card-title {
     padding: 5px 0;
+}
+
+
+/*get-started*/
+
+#get-started {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.center-content {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.left-content {
+    height: 500px;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px 0;
+}
+
+.right-content {
+    height: 500px;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.right-content img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.left-content span {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.left-content h2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.left-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.left-content button {
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: gray;
+    color: white;
 }
