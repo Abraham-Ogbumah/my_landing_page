@@ -80,8 +80,6 @@ header {
     line-height: 1.2;
 }
 
-.cta {}
-
 .detail button {
     padding: 10px;
     border-radius: 30px;
@@ -95,8 +93,6 @@ header {
     padding: 150px 0px;
     background-color: #fff;
 }
-
-.card-container {}
 
 .cards {
     display: flex;
@@ -131,10 +127,11 @@ header {
 #get-started {
     padding-top: 110px;
     padding-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 .center-content {
-    max-width: 90rem;
+    width: 90rem;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -187,4 +184,30 @@ header {
     border-radius: 40px;
     background-color: gray;
     color: white;
+}
+
+
+/*Our Services*/
+
+#other-services {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: #fff;
+}
+
+.main-service {
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-service h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-service p {
+    margin: 0 25rem 3rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
