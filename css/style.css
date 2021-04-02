@@ -186,12 +186,13 @@ header {
 }
 
 
-/*Our Services*/
+/*Other Services*/
 
 #other-services {
     padding-top: 110px;
     padding-bottom: 110px;
     background: #fff;
+    width: 100%;
 }
 
 .main-service {
@@ -217,4 +218,104 @@ footer {
     background-color: #d3d3d3;
     text-align: center;
     line-height: 65px;
+}
+
+@media (max-width: 480px) {
+    /*Hero Section*/
+    .hero-image {
+        width: 100%;
+        height: 400px;
+    }
+    .hero-details {
+        width: 50%;
+    }
+    .hero-contents {
+        width: 100%;
+        height: 40%;
+    }
+    .detail {
+        width: 350px;
+    }
+    .detail h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+        line-height: 1;
+    }
+    .detail p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    .detail button {
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 0.8rem
+    }
+    /*Our Services*/
+    #our-services {
+        padding: 50px 0px;
+        background-color: #fff;
+    }
+    /*get-started*/
+    #get-started {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .center-content {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .left-content {
+        height: 500px;
+        width: 90%;
+    }
+    .right-content {
+        height: 385px;
+        width: 90%;
+    }
+    .left-content h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .left-content p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .left-content button {
+        border: none;
+        padding: 10px;
+        border-radius: 40px;
+        background-color: gray;
+        color: white;
+    }
+    .right-content img {
+        max-width: 100%;
+        max-height: 350px;
+    }
+    /*Other Services*/
+    #other-services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #fff;
+    }
+    .main-service {
+        max-width: 90rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-service h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .main-service p {
+        margin: 0 15px 30px;
+        font-size: 1rem;
+        line-height: 1.1;
+    }
 }
