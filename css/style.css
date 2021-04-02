@@ -127,7 +127,6 @@ header {
 #get-started {
     padding-top: 110px;
     padding-bottom: 110px;
-    margin-bottom: 100px;
 }
 
 .center-content {
@@ -210,4 +209,12 @@ header {
     margin: 0 25rem 3rem;
     font-size: 1.2rem;
     line-height: 1.2;
+}
+
+footer {
+    height: 65px;
+    width: 100%;
+    background-color: #d3d3d3;
+    text-align: center;
+    line-height: 65px;
 }
