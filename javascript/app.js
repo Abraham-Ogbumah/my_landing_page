@@ -1,7 +1,7 @@
 const body = document.body;
 const navLinks = [...document.querySelectorAll('section')].map(item => item.id); //Extract the Section names as a nodeList
 const linksList = document.querySelector('.items');
-const classElement = document.querySelector('.active');
+//const classElement = document.querySelector('.active');
 
 function buildNav() {
     for (const link of navLinks) {
@@ -17,7 +17,7 @@ function buildNav() {
     }
 }
 
-function removeClassActive() {
+/*function removeClassActive() {
     for (const classEle of classElement) {
         classEle.addEventListener("click", function() {
             classEle.classList.remove('active');
@@ -26,9 +26,9 @@ function removeClassActive() {
             //current.classList.add('active');
         })
     }
-}
+}*/
 
 
 window.addEventListener("load", buildNav);
 
-removeClassActive();
+//removeClassActive();
