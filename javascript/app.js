@@ -1,6 +1,7 @@
 const body = document.body;
 const navLinks = [...document.querySelectorAll('section')].map(item => item.id); //Extract the Section names as a nodeList
 const linksList = document.querySelector('.items');
+const sectionList = document.querySelectorAll('section');
 //const classElement = document.querySelector('.active');
 
 function buildNav() {
@@ -17,18 +18,13 @@ function buildNav() {
     }
 }
 
-/*function removeClassActive() {
-    for (const classEle of classElement) {
-        classEle.addEventListener("click", function() {
-            classEle.classList.remove('active');
-            //const current = document.getElementsByTagName("section");
-            //current.classList.remove('active');
-            //current.classList.add('active');
-        })
-    }
-}*/
-
-
 window.addEventListener("load", buildNav);
 
-//removeClassActive();
+window.addEventListener("scroll", function() {
+    for (section of sectionList) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+            section.classList.remove("active");
+        }
+        section.classList.add('active');
+    }
+});
