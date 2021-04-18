@@ -22,27 +22,23 @@ buildNav();
 
 //window.addEventListener("load", buildNav);
 
-//gives boolean value if section is in viewport
-function isInViewport(e) {
-    let bounding = e.getBoundingClientRect();
-    return (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-};
 
-//highlights corresponding section of navbar if section is in viewport
-const navHighlight = document.querySelector('.nav_bar').querySelectorAll('a');
+//Smooth scroll behavior
+const getAnchor = 'a[href^="#"]';
+const allAnchors = document.querySelectorAll('.links');
+allAnchors.forEach(a => {
+    a.addEventListener('click', function(event) {
+        event.preventDefault();
+        const destination = document.querySelector(this.hash);
+        destination.scrollIntoView({
+            behavior: 'smooth'
+        });
+    })
+});
 
-function highlightSection() {
-    for (let i = 0; i < sectionList.length; i++) {
-        if (isInViewport(sectionList[i]) === true) {
-            navHighlight[i].classList.add('active')
-        } else navHighlight[i].classList.remove('active');
+/*const menuLength = allAnchors.length;
+for (let i = 0; i < menuLength; i++) {
+    if (allAnchors[i].href === navLinks) {
+        allAnchors[i].className = "active"
     }
-}
-
-
-document.addEventListener('scroll', highlightSection);
+}*/
