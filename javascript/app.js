@@ -28,8 +28,8 @@ const anchor = document.querySelectorAll('.links');
 anchor.forEach(a => {
     a.addEventListener('click', function(evt) {
         evt.preventDefault();
-        const destination = document.querySelector(this.hash);
-        destination.scrollIntoView({
+        const destinationLink = document.querySelector(this.hash);
+        destinationLink.scrollIntoView({
             behavior: 'smooth'
         });
     })
