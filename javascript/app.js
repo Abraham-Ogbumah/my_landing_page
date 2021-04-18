@@ -24,21 +24,13 @@ buildNav();
 
 
 //Smooth scroll behavior
-const getAnchor = 'a[href^="#"]';
-const allAnchors = document.querySelectorAll('.links');
-allAnchors.forEach(a => {
-    a.addEventListener('click', function(event) {
-        event.preventDefault();
+const anchor = document.querySelectorAll('.links');
+anchor.forEach(a => {
+    a.addEventListener('click', function(evt) {
+        evt.preventDefault();
         const destination = document.querySelector(this.hash);
         destination.scrollIntoView({
             behavior: 'smooth'
         });
     })
 });
-
-/*const menuLength = allAnchors.length;
-for (let i = 0; i < menuLength; i++) {
-    if (allAnchors[i].href === navLinks) {
-        allAnchors[i].className = "active"
-    }
-}*/
