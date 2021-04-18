@@ -18,13 +18,31 @@ function buildNav() {
     }
 }
 
-window.addEventListener("load", buildNav);
+buildNav();
 
-window.addEventListener("scroll", function() {
-    for (section of sectionList) {
-        if (section.getBoundingClientRect().top < window.innerHeight) {
-            section.classList.remove("active");
-        }
-        section.classList.add('active');
+//window.addEventListener("load", buildNav);
+
+//gives boolean value if section is in viewport
+function isInViewport(e) {
+    let bounding = e.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+//highlights corresponding section of navbar if section is in viewport
+const navHighlight = document.querySelector('.nav_bar').querySelectorAll('a');
+
+function highlightSection() {
+    for (let i = 0; i < sectionList.length; i++) {
+        if (isInViewport(sectionList[i]) === true) {
+            navHighlight[i].classList.add('active')
+        } else navHighlight[i].classList.remove('active');
     }
-});
+}
+
+
+document.addEventListener('scroll', highlightSection);
