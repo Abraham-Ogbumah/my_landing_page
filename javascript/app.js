@@ -23,7 +23,7 @@ buildNav();
 //window.addEventListener("load", buildNav);
 
 
-//Smooth scroll behavior
+//The section below implements the smooth scroll behavior
 const anchor = document.querySelectorAll('.links');
 anchor.forEach(a => {
     a.addEventListener('click', function(evt) {
