@@ -5,10 +5,10 @@
     font-size: 16px;
 }
 
-
-/*body {
-    background-color: #d3d3d3;
-}*/
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 
 /* Header */
@@ -46,7 +46,9 @@ header {
 }
 
 .active {
-    opacity: 0.5;
+    color: #fff;
+    padding: 5px;
+    background-color: #000;
 }
 
 
