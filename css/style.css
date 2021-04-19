@@ -41,9 +41,7 @@ header {
 }
 
 .active {
-    color: #fff;
-    padding: 5px;
-    background-color: #000;
+    opacity: 1 !important;
 }
 
 
@@ -51,6 +49,7 @@ header {
 
 #hero {
     width: 100%;
+    opacity: .5;
 }
 
 .hero-image {
@@ -107,6 +106,7 @@ header {
 #our-services {
     padding: 150px 0px;
     background-color: #fff;
+    opacity: .5;
 }
 
 .cards {
@@ -143,6 +143,7 @@ header {
     padding-top: 110px;
     padding-bottom: 110px;
     background-color: #d3d3d3;
+    opacity: .5;
 }
 
 .center-content {
@@ -209,6 +210,7 @@ header {
     padding-bottom: 110px;
     background: #fff;
     width: 100%;
+    opacity: .5;
 }
 
 .main-service {
@@ -229,7 +231,7 @@ header {
 }
 
 footer {
-    height: 65px;
+    height: 250px;
     width: 100%;
     background-color: #d3d3d3;
     text-align: center;
